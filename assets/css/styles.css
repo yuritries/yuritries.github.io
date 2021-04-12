@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+:root {
+  --primary_logo: rgb(247, 242, 217);
+  --text: #bb1592;
+  --mainDark: #3a3e3b;
+  --mainsecondary: #fca311;
+  --main_bg: rgba(202, 197, 174, 0.452);
+  --mainTransition: all 0.3s linear;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li,
+a,
+button {
+  font-family: "Dancing Script", cursive;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #bb1592;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 4%;
+  background: var(--primary_logo);
+  position: fixed;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+}
+.logo {
+  cursor: pointer;
+  order: 3;
+  margin-left: auto;
+}
+nav {
+  order: 1;
+}
+.nav__links {
+  list-style: none;
+}
+.nav__links li {
+  display: inline-block;
+  padding: 0 25px;
+  background: linear-gradient(to right top, #c5194b, #dfdf4f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav__links li:nth-child(1) {
+  display: inline-block;
+  padding: 0 25px 0 0;
+}
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+  color: teal;
+}
+button {
+  padding: 5px 10px;
+  background-color: var(--primary_logo);
+  border: 1px solid var(--primary_logo);
+  color: var(--text);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 25px;
+  background: linear-gradient(to right top, #c5194b, #dfdf4f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+button:hover {
+  background-color: var(--text);
+  color: var(--primary_logo);
+  border: 1px solid var(--primary_logo);
+}
+.cta {
+  order: 2;
+}
+.cover {
+  min-height: 100vh;
+  background: url("/images/cover.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.divisor_cont {
+  background: linear-gradient(to right, #c5194b, #dfdf4f);
+  height: 0.5rem;
+}
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.icone_produto img {
+  width: 40px;
+  height: 50px;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.produto {
+  text-align: center;
+  padding: 2.5rem 0;
+  background-color: var(--main_bg);
+  transition: background-color 10s ease-in;
+}
+
+.produto h3 {
+  font-family: "Poppins", sans-serif;
+  color: var(--mainsecondary);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-weight: 500;
+  transition: color 1s linear;
+}
+.descr_produto {
+  max-width: 13rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  color: var(--mainDark);
+}
+.filter {
+  filter: invert(25%) sepia(13%) saturate(139%) hue-rotate(83deg)
+    brightness(92%) contrast(98%);
+}
+.produto:hover {
+  background: linear-gradient(to right top, #c5194b, #dfdf4f);
+}
+.produto:hover h3 {
+  color: rgb(247, 242, 217);
+}
+.rodape {
+  background: var(--mainDark);
+  text-align: center;
+  padding: 4rem 0rem;
+}
+.social_icon {
+  color: var(--primary_logo);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: var(--mainTransition);
+}
+.social_icon:hover {
+  color: var(--main_bg);
+}
+.texto_rodape {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-top: 1rem;
+  color: var(--primary_logo);
+  line-height: 1.5rem;
+}
+.texto_primario {
+  color: #dfdf4f;
+}
