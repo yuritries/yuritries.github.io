@@ -139,6 +139,37 @@ button:hover {
 .produto:hover h3 {
   color: rgb(247, 242, 217);
 }
+@media screen and (max-width:1066px) {
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width:576px) {
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width:900px) {
+  nav,
+  .cta {
+    display: none;
+  }
+  .logo {
+    margin: auto;
+  }
+}
+@media screen and (max-width:730px) {
+  .texto_primario::after {
+    content:" ";
+    clear: right;
+    display: table;
+  }
+  .logo {
+    height: 70px;
+  }
+}
 .rodape {
   background: var(--mainDark);
   text-align: center;
